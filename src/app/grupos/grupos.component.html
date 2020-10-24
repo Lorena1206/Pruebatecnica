@@ -1,0 +1,19 @@
+<h1>Grupos</h1>
+<table>
+    <thead class="encabezado">
+        <th>
+            Nombre
+        </th>
+        <th>
+            Grupo
+        </th>
+
+    </thead>
+    <tr *ngFor="let dato of data" [routerLink]="['/informacion',dato['id']]">
+        <td>
+            {{dato.nombre}}
+        </td>
+        <td>
+            {{dato.numGrupo}}
+        </td>
+    </tr>

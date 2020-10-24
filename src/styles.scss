@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+h1 {
+    text-align: center;
+}
+tr:hover {
+    cursor: pointer !important;
+    background: #dcd3d3;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+}
+th,
+td {
+    width: 25%;
+    text-align: center;
+}

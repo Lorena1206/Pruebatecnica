@@ -1,0 +1,19 @@
+<h1>Instituciones</h1>
+<table>
+    <thead class="encabezado">
+        <th>
+            Nombre
+        </th>
+        <th>
+            Cod Dane
+        </th>
+
+    </thead>
+    <tr *ngFor="let dato of data" [routerLink]="['/sedes' ,dato['dane']]">
+        <td>
+            {{dato.nombre}}
+        </td>
+        <td>
+            {{dato.dane}}
+        </td>
+    </tr>

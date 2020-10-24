@@ -1,0 +1,21 @@
+
+<h1>Listado de municipios</h1>
+<table>
+    <thead class="encabezado">
+        <th>
+            Municipios
+        </th>
+        <th>
+            Cod Dane
+        </th>
+
+    </thead>
+    <tr *ngFor="let dato of data" [routerLink]="['instituciones',dato['dane']]">
+        <td>
+            {{dato.nombre}}
+        </td>
+        <td>
+            {{dato.dane}}
+        </td>
+    </tr>
+</table>
